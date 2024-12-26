@@ -1,0 +1,21 @@
+{
+  "name": "sistema-login-logout-jwt",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "nodemon server/server.js"
+  },
+  "keywords": [],
+  "author": "Lucas Dias",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.5",
+    "sequelize": "^6.37.5",
+    "uuid": "^11.0.3"
+  }
+}

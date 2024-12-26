@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <!-- caixa de Login -->
+
+        <div id="login-container">
+            <h1>Login</h1>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email-login">Email:</label>
+                    <input type="email" id="email-login" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password-login">Senha:</label>
+                    <input type="password" id="password-login" name="password" required>
+                </div>
+                <button type="submit">Entrar</button>
+            </form>
+            <button id="show-register">Não tem conta? Cadastre-se</button>
+        </div>
+
+        <!-- caixa de Cadastro -->
+
+        <div id="register-container" style="display: none;">
+            <h1>Cadastro</h1>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="email-register">Email:</label>
+                    <input type="email" id="email-register" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password-register">Senha:</label>
+                    <input type="password" id="password-register" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password-register">Confirme a senha:</label>
+                    <input type="password" id="confirm-password-register" name="confirm-password" required>
+                </div>
+                <button type="submit">Cadastrar</button>
+            </form>
+            <button id="show-login">Já tem conta? Faça login</button>
+        </div>
+
+        <!-- caixa de Bem-vindo -->
+
+        <div id="welcome-container" style="display: none;">
+            <h2>Bem-vindo ao sistema!</h2>
+            <button id="logout-button">Logout</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
